@@ -2,16 +2,11 @@
 <html lang="en">
   <head>
     <!-- Metadata of the Webpage -->
-    <!-- Character-set Metadata -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Viewport Metadata -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Description Metadata-->
     <meta name="description" content="Portfolio Website" />
-    <!-- Author Metadata -->
     <meta name="author" content="Mohamed Dalkha" />
-    <!-- Keyword Metadata -->
     <meta
       name="keywords"
       content="Aditya Singh, Aditya Vikram Singh, Aditya Vikram Singh DPS,
@@ -20,12 +15,37 @@
         Singh Amherst, Aditya Vikram Singh ISSDC, Aditya Vikram Singh NASA,
         Aditya Vikram Singh, Aditya Vikram Singh Website, Aditya V Singh"
     />
+
     <!-- Webpage Logo -->
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <!-- Webpage Title -->
     <title>Mohamed Dalkha</title>
 
-    <!-- Import CSS: Main Stylesheet -->
+    <!-- FullStory Tracking Script -->
+    <script>
+      window['_fs_debug'] = false;
+      window['_fs_host'] = 'fullstory.com';
+      window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+      window['_fs_org'] = 'YOUR_ORG_ID'; // Replace with your FullStory Org ID
+      window['_fs_namespace'] = 'FS';
+      (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+        o=n.createElement(t);o.async=1;o.src='https://'+_fs_script;
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};
+        g.setUserVars=function(v,s){g(l,v,s)};
+        g.event=function(n,p,s){g('event',{n:n,p:p},s)};
+        g.anonymize=function(){g.identify(!!0)};
+        g.shutdown=function(){g("rec",!1)};
+        g.restart=function(){g("rec",!0)};
+        g.log=function(a,b){g("log",[a,b])};
+        g.consent=function(a){g("consent",!arguments.length||a)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+      })(window,document,window['_fs_namespace'],'script','user');
+    </script>
+
+    <!-- Import CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
@@ -44,41 +64,40 @@
             <i class="icon fa fa-github-alt" aria-hidden="true"></i>
           </a>
           <a aria-label="My Résumé" target="_blank" href="https://app.luminpdf.com/viewer/63594d541bd6e509c1fbd99a">
-            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+            <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
           </a>
-          <a aria-label="Send Email" href="mailto:mohameddalkha43" target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
+          <a aria-label="Send Email" href="mailto:mohameddalkha43" target="_blank">
+            <i class="icon fa fa-envelope"></i>
+          </a>
         </div>
         <div class="header-links">
           <a class="link" href="#about" data-scroll>About Me</a>
         </div>
       </div>
-      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+      <a class="down" href="#about" data-scroll>
+        <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
+      </a>
     </div>
 
     <!-- About Section -->
     <section id="about">
-      <!-- User Introduction-->
       <div class="user-details">
         <h1>About Me</h1>
         <p>
-          👋🏽Hi, I'm Mohamed Dalkha And I am pursuing in mailam engineering college with a  Bachelor Degree in Computer science Engineering.
-          🏠Lives in tindivanam, with a passion for becoming an energetic data analyst.
-          📚My work involves auditing operations teams & system outputs, suggesting and implementing process improvements, and identifying emerging process performance trends while ensuring the organization remains competitive, wide selection and good product information, and also solve challenging operational goals.
-          💻As for my future, I want to improve my knowledge in data analysis and ensure a down-to-earth approach in collaboration with highly efficient workgroups, by utilizing my skills and aspire to crave as an energetic data analyst.
-          🔗In my leisure I used to work on my new skill development to improve my career.
-          📍My strengths include assessing the needs and preferences of customers and being an innovative team playe
+          👋🏽Hi, I'm Mohamed Dalkha, and I am pursuing a Bachelor Degree in Computer Science Engineering at Mailam Engineering College.
+          🏠Lives in Tindivanam, with a passion for becoming an energetic data analyst.
+          📚My work involves auditing operations teams & system outputs, suggesting and implementing process improvements, and identifying emerging process performance trends while ensuring the organization remains competitive.
+          💻As for my future, I want to improve my knowledge in data analysis and ensure a down-to-earth approach in collaboration with highly efficient workgroups, by utilizing my skills and aspiring to be an energetic data analyst.
+          🔗In my leisure, I work on developing new skills to improve my career.
+          📍My strengths include assessing customer needs and preferences and being an innovative team player.
         </p>
       </div>
+    </section>
 
-    <!-- Import JS: Particles Theme -->
+    <!-- Import JS -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Import JS: Sweet Scroll -->
     <script src="./assets/js/sweet-scroll.min.js"></script>
-    <!-- Import JS: Google Analytics -->
     <script src="./assets/js/google-analytics.js"></script>
-    <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
